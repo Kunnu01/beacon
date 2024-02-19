@@ -2,7 +2,7 @@ import React from 'react';
 import { Drawer } from './components/ui';
 import { Beacon } from './beacon';
 
-const SHOW_DRAWER = true;
+const SHOW_DRAWER = false;
 
 function App() {
   if (SHOW_DRAWER) {
