@@ -27,10 +27,10 @@ const TMSInfo = () => {
       <CustomerInfo />
       <hr className="my-3" />
       {headers.map(h => (
-        <>
+        <div key={h.label}>
           <GeneralInfo label={h.label} icon={h.icon} />
           <hr className="my-3" />
-        </>
+        </div>
       ))}
       <button className="w-full py-4 bg-orange-500/75 mt-8 rounded-2xl text-white text-center text-xl">Confirm</button>
     </div>

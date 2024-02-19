@@ -57,7 +57,7 @@ const Beacon = () => {
             </div>
             <div className="flex">
               {infoData.labels.map(label => (
-                <Badge text={label} className="ml-1 text-gray-600" />
+                <Badge key={label} text={label} className="ml-1 text-gray-600" />
               ))}
             </div>
           </div>
