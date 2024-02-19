@@ -22,18 +22,15 @@ const Tabs: FC<ITabsProps> = ({ tabs, value, onChange }) => {
               key={tab.key}
               type="button"
               className={`
-                py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap
+                py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap
                 text-gray-500 hover:text-orange-600 focus:outline-none text-base
                 ${
                   value === tab.key &&
                   `
-                 border-orange-400 text-orange-500
+                 border-orange-400 text-orange-500 border-b-orange-400
                 `
                 }
               `}
-              id="tabs-with-underline-item-1"
-              data-hs-tab="#tabs-with-underline-1"
-              aria-controls="tabs-with-underline-1"
               role="tab"
               onClick={() => onChange(tab.key)}
             >

@@ -20,7 +20,7 @@ const DisclosuereHeader: FC<IDisclosureHeader> = ({ open, label, icon, toggleEdi
       <div className="text-xl flex items-center font-semibold">
         <div className='mr-2'>{icon}</div>
         {label}
-        <button className="ml-2 text-orange-500" onClick={handleOnEditClick}>
+        <button className="ml-3 text-base text-orange-500" onClick={handleOnEditClick}>
           Edit
         </button>
       </div>
